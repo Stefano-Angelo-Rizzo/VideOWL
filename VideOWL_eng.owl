@@ -603,9 +603,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Dynamc_Adventure -->
+    <!-- http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Dynamic_Adventure -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Dynamc_Adventure">
+    <owl:Class rdf:about="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Dynamic_Adventure">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1263,9 +1263,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Multiplayer_aviable -->
+    <!-- http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Multiplayer_available -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Multiplayer_aviable">
+    <owl:Class rdf:about="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Multiplayer_available">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#hasgameplay"/>
@@ -1336,6 +1336,20 @@
     <owl:Class rdf:about="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#POV">
         <rdfs:comment xml:lang="en">Poin Of View: the visualization through which the gaming experience manifest itself in the eyes of the player</rdfs:comment>
         <rdfs:comment xml:lang="ita">visualizzazione tramite la quale l&apos;esperienza videoludica diventa manifesta agli occhi del giocatore</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Party -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Party">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#hasgameplay"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Party"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Multiplayer_available"/>
     </owl:Class>
     
 
@@ -1959,20 +1973,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#party -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#party">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#hasgameplay"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#party"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Multiplayer_aviable"/>
-    </owl:Class>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -2165,9 +2165,9 @@
         <hasPOV rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#3P"/>
         <hasgameplay rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Open_map"/>
         <hasgameplay rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#PVP"/>
+        <hasgameplay rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Party"/>
         <hasgameplay rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#creation_based"/>
         <hasgameplay rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#free_shooting"/>
-        <hasgameplay rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#party"/>
         <hasnarrative rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#emergent"/>
         <rdfs:comment rdf:resource="https://it.wikipedia.org/wiki/Fortnite"/>
     </owl:NamedIndividual>
@@ -2357,6 +2357,14 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Multiplayer"/>
         <rdfs:comment xml:lang="ita">Giocatore contro giocatore</rdfs:comment>
         <rdfs:comment xml:lang="en">Player Versus Player</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Party -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Party">
+        <rdf:type rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Multiplayer"/>
     </owl:NamedIndividual>
     
 
@@ -2937,14 +2945,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#party -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#party">
-        <rdf:type rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Multiplayer"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#permanent_death -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#permanent_death">
@@ -3297,13 +3297,13 @@
         <rdfs:comment xml:lang="ita">gioco che offre al giocatore un mondo veramente ampio nel quale vagare, spesso riempito di eventi casuali, punti di interesse, punti per scambiare merci e oggetti da collezionare.</rdfs:comment>
         <rdfs:comment xml:lang="en">game that offers to the player a very large world to roam, often filled with random events, points of interest (POI), locations to trade goods and find collectibles.</rdfs:comment>
     </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Party">
+        <rdfs:comment xml:lang="en">Game made for parties</rdfs:comment>
+        <rdfs:comment>gioco creato apposta per feste</rdfs:comment>
+    </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#QTE">
         <rdfs:comment xml:lang="ita">un Quick-Time Event è una meccanica che mette alla prova i riflessi del giocatore facendogli premere un pulsante specifico al momento giusto</rdfs:comment>
         <rdfs:comment xml:lang="en">A Quick-Time-Event is a mechanic that tests the player&apos;s reflexes by making them press a specific button at the right time</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#party">
-        <rdfs:comment>gioco creato apposta per feste</rdfs:comment>
-        <rdfs:comment xml:lang="en">Game made for parties</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
         <rdfs:comment xml:lang="ita">stato dell’arte dell’industria videoludica</rdfs:comment>
