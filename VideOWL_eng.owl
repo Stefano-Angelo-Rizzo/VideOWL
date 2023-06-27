@@ -490,9 +490,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Choices -->
+    <!-- http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Choice -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Choices">
+    <owl:Class rdf:about="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Choice">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Mechanic"/>
         <rdfs:comment xml:lang="en">Mechanic that allows the player to impart a direction besidesthe default one either to some elements of the game world or to the plot revolving around it. Choices often are the key to games with multiple endings, altough sone games employ more subtle element to determine an ending (i.e. the case of &quot;SIGNALIS&quot;)</rdfs:comment>
         <rdfs:comment xml:lang="ita">meccanica che permette al giocatore di impartire una direzione diversa dalla predefinita ad alcuni elementi del mondo di gioco o alla trama. Le scelte sono spesso la chiave dei giochi che presentano diversi finali, tuttavia bisogna comprendere che possono esserci altri elementi più sottili che determinano quella variabile (ad esempio, si veda il caso del gioco &quot;SIGNALIS&quot;)</rdfs:comment>
@@ -1045,7 +1045,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#hasmechanic"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Choices"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Choice"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#hasmechanic"/>
@@ -1130,7 +1130,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#hasmechanic"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Choices"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Choice"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#hasnarrative"/>
@@ -1450,7 +1450,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#hasmechanic"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Choices"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Choice"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#hascontext"/>
@@ -1953,7 +1953,7 @@
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#hasmechanic"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Choices"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Choice"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#hasmechanic"/>
@@ -2720,7 +2720,7 @@
     <!-- http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#embedded_choice -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#embedded_choice">
-        <rdf:type rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Choices"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Choice"/>
     </owl:NamedIndividual>
     
 
@@ -2924,7 +2924,7 @@
     <!-- http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#multiple_choice -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#multiple_choice">
-        <rdf:type rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Choices"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Choice"/>
     </owl:NamedIndividual>
     
 
