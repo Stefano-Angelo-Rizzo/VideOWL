@@ -1,0 +1,28 @@
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX VideOWL: <http://www.semanticweb.org/porta/ontologies/2022/5/VideOWL#>
+PREFIX unt: <http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#>
+
+
+7) All the exclusives, namely all the titles that came out only for a single platform.
+
+SELECT ?Game
+                WHERE { 
+                               { SELECT ?Game (COUNT(*) as ?count) WHERE 
+                                           { ?Game unt:compatibleWith ?o .
+                                            } 
+                                GROUP BY ?Game 
+                                }
+                                { SELECT (MIN(?Platform) AS ?count) WHERE 
+                                {
+                                            {SELECT ?Game (COUNT(*) as ?Platform)WHERE { 
+                                                              ?Game unt:compatibleWith ?o . 
+                                              } 
+                                 GROUP BY ?Game
+                                 }
+                                 }
+                                 }
+                                 }
