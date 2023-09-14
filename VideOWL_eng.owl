@@ -523,9 +523,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Collections -->
+    <!-- http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Collection -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Collections">
+    <owl:Class rdf:about="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#Collection">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/porta/ontologies/2022/5/untitled-ontology-7#includes"/>
